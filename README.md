@@ -1,6 +1,6 @@
 # DaZi (AI教学搭子): AI Teaching Companion
 
-DaZi is a web platform with nine AI tools for teachers and students, from lesson-plan drafting and quiz generation to concept explanations and email writing. I led the team that built it, and it placed **4th in the Gemma 3 Challenge**.
+DaZi is a web platform with nine AI tools for teachers and students, from lesson-plan drafting and quiz generation to concept explanations and email writing. It placed **4th in the Gemma 3 Challenge**.
 
 This repository contains the platform's Gemma integration: a frontend API service and a Next.js route that call Google's Gemma 3n model through OpenRouter. The full web app is in [AI-Camp](https://github.com/Aurora-yang-git/AI-Camp) ([live demo](https://ai-camp-one.vercel.app)), and the WeChat mini-program version is [AICamp-Mini](https://github.com/SCLS-AI-Camp/AICamp-Mini).
 
