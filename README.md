@@ -1,12 +1,14 @@
-# AI教学搭子
+# DaZi (AI教学搭子): AI Teaching Companion
 
-A comprehensive platform offering intelligent educational tools for teachers and students. The platform is available both as a web application (current repository) and as a WeChat Mini Program ([open source on GitHub](https://github.com/SCLS-AI-Camp/AICamp-Mini)).
+DaZi is a web platform with nine AI tools for teachers and students, from lesson-plan drafting and quiz generation to concept explanations and email writing. I led the team that built it, and it placed **4th in the Gemma 3 Challenge**.
+
+This repository contains the platform's Gemma integration: a frontend API service and a Next.js route that call Google's Gemma 3n model through OpenRouter. The full web app is in [AI-Camp](https://github.com/Aurora-yang-git/AI-Camp) ([live demo](https://ai-camp-one.vercel.app)), and the WeChat mini-program version is [AICamp-Mini](https://github.com/SCLS-AI-Camp/AICamp-Mini).
 
 ![preview](preview.png)
 
 ## 项目简介
 
-This platform provides a collection of AI-powered tools organized into four categories designed to enhance teaching and learning experiences:
+The nine tools are organized into four categories:
 
 ### 1. 智慧课堂 (Smart Classroom)
 Tools to assist with classroom teaching and lesson preparation:
@@ -27,7 +29,7 @@ Tools to boost creativity and communication:
 
 ### 4. 心灵成长 (Mindful Growth)
 Tools for personal growth and reflection:
-- 心灵镜像 (Mind Mirror): Analyze emotional states and provide supportive responses
+- 心灵镜像 (Mind Mirror): Generates reflective, supportive responses to how users describe their feelings
 
 
 ## 技术架构与 Gemma 模型集成流程
@@ -120,10 +122,10 @@ Tools for personal growth and reflection:
 1. **核心功能支持**：为教育工具提供自然语言生成能力
 2. **默认模型选择**：作为平台默认的AI生成模型
 3. **教育内容生成**：支持各类教育工具，如概念背景、教案设计等
-4. **性能优化**：通过直接API调用方式提高响应速度
-
-Gemma模型通过OpenRouter服务集成到系统中，为AI教学搭子提供强大的自然语言处理能力，所有工具默认使用此模型来生成各类教育内容。
+4. **调用方式**：后端通过 OpenAI 兼容的 chat.completions 接口向 OpenRouter 发送请求
 
 ## Demo展示
+
+线上演示：https://ai-camp-one.vercel.app
 
 Google Slides 链接：https://docs.google.com/presentation/d/12q4uWQq2fTgVSJ2ss6snVq7peqrqks1Adj3ohLJyzmY/edit?usp=sharing
